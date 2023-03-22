@@ -84,7 +84,7 @@ public class permisosThreads implements Runnable {
                 permisoActual.setEstado(nuevoEstado);
                 boolean result = logica.permisosLogica.updatePermiso(permisoActual);
                 if (result) {
-
+                    JOptionPane.showMessageDialog(null, "Hecho");
                     setProgressBarUp();
                 } else {
                     JOptionPane.showMessageDialog(null, "Ha ocurrido un error");
